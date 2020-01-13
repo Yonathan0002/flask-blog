@@ -42,3 +42,12 @@ Classe représentant un film.
         if rating < 0 or rating > 10:
             raise ValueError("rating doit etre entre 0 et 10")
         self.rating = rating
+        
+    def getTitle(self: object) -> str:
+        """
+        Retourne le titre du film.
+        @returntitre du film
+        """
+        return self.title
+
+    def getduration()
