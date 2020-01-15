@@ -1,34 +1,4 @@
-
 from math import *
-
-def durationToString(minutes: int) -> str: 
-    """ 
-Convertit une durée exprimée en minutes en une chaîne de caractères ayant la forme HH:MM
-Si nécessaire, le nombre d'heures peut comporter plus de 2 chiffres.
-@param minutes durée en minutes
-@return résultat
-    """
-    return f"{minutes//60:02d}:{minutes%60:02d}"
-
-def ratingToStars(rating: float, max: int) -> str: 
-    """
-Convertit une note entière comprise entre 0 et $max en une chaîne de caractères composée d'étoiles.
-@param rating note comprise entre 0 et $max
-@param max valeur maximale de la note*
-@return chaîne de caractères composée d'étoiles
-    """
-    rating = floor(rating)
-    if max < rating:
-        raise ValueError("rating est superieur a max")
-    retour = ""
-
-    for i in range(0, rating):
-        retour += '\u2605'
-
-    for i in range(rating, max):
-        retour += '\u2606'
-    
-    return retour
 
 class Movie:
     """
@@ -43,6 +13,35 @@ class Movie:
         self._title = title
         self._duration = duration
         self.rating = rating
+    @staticmethod
+    def durationToString(minutes: int) -> str: 
+        """ 
+        Convertit une durée exprimée en minutes en une chaîne de caractères ayant la forme HH:MM
+        Si nécessaire, le nombre d'heures peut comporter plus de 2 chiffres.
+        @param minutes durée en minutes
+        @return résultat
+        """
+        return f"{minutes//60:02d}:{minutes%60:02d}"
+    @staticmethod
+    def ratingToStars(rating: float, max: int) -> str: 
+        """
+        Convertit une note entière comprise entre 0 et $max en une chaîne de caractères composée d'étoiles.
+        @param rating note comprise entre 0 et $max
+        @param max valeur maximale de la note*
+        @return chaîne de caractères composée d'étoiles
+        """
+        rating = floor(rating)
+        if max < rating:
+            raise ValueError("rating est superieur a max")
+        retour = ""
+
+        for i in range(0, rating):
+            retour += '\u2605'
+
+        for i in range(rating, max):
+            retour += '\u2606'
+        
+        return retour
     
     # Mise en place de la propriété “title”en lecture seule
     def getTitle(self: object) -> str:
@@ -125,4 +124,4 @@ class Movie:
     rating = property(getRating, setRating)
     title = property(getTitle)
     def __repr__(self: object) -> str:
-        return self.title + " (" + durationToString(self.duration) + ") \n" + ratingToStars(self._rating,10)
+        return self.title + " (" + Movie.durationToString(self.duration) + ") \n" + Movie.ratingToStars(self._rating,10)

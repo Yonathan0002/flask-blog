@@ -1,10 +1,8 @@
 
-from movie import durationToString
-from movie import ratingToStars
 from movie import Movie
 
 
-
+"""
 print(durationToString(512))
 print(durationToString(4096))
 print(durationToString(32768))
@@ -14,7 +12,7 @@ print(ratingToStars(0,8))
 print(ratingToStars(2,8))
 print(ratingToStars(4,8))
 print(ratingToStars(8,8))
-
+"""
 m1 = Movie('Les évadés')
 
 print(vars(m1))
@@ -66,5 +64,8 @@ try:
 except:
     print('Les lignes précédentes n’auraient pas dû lancer d’exception !!')
 
-m3 = Movie('Les évadés', 122, 9.0)
+m3 = Movie('Les évadés', 142, 9.0)
 print(m3)
+
+s: str = Movie.durationToString(142)
+print(s)
