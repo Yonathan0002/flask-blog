@@ -20,7 +20,7 @@ Convertit une note entière comprise entre 0 et $max en une chaîne de caractèr
     retour = ""
 
     for i in range(0, rating):
-        retour += "\u2605"
+        retour += '\u2605'
 
     for i in range(rating, max):
         retour += '\u2606'
@@ -29,7 +29,7 @@ Convertit une note entière comprise entre 0 et $max en une chaîne de caractèr
 
 class Movie:
     """
-Classe représentant un film.
+    Classe représentant un film.
     """
 
     def __init__(self: object, title: str, duration= 0, rating= 0.0) -> None:
@@ -37,17 +37,87 @@ Classe représentant un film.
     Constructeur.
     @param$title    titre du film
         """
-        self.title = title
-        self.duration = duration
-        if rating < 0 or rating > 10:
-            raise ValueError("rating doit etre entre 0 et 10")
+        self._title = title
+        self._duration = duration
         self.rating = rating
-        
+    
+    # Mise en place de la propriété “title”en lecture seule
     def getTitle(self: object) -> str:
         """
         Retourne le titre du film.
-        @returntitre du film
+        Retour:
+            Le titre du film
         """
-        return self.title
+        return self._title
 
-    def getduration()
+    @property
+    def title(self: object) -> str:
+        """
+        Retourne le titre du film.
+        retour:
+            Titre du film
+        """
+        return self.getTitle()
+    
+    @property
+    def duration(self: object) -> int:
+        """
+        Retourne la duréedu film(exprimée en minutes).
+
+        Retour:
+            Durée du film
+        """
+        return self.getDuration()
+    
+
+    def getDuration(self: object) -> int:
+        """
+        Retourne le Duration du film.
+        @return Duration du film
+        """
+        return self._duration
+
+    # Mise en place de la proprité “rating”en lecture et écritur
+    def getRating(self: object) -> float:
+        """
+        Retourne le Rating du film.
+        @return Rating du film
+        """
+        return self._rating   
+
+    @property
+    def rating(self: object) -> float:
+        """
+        Retourne la note donnéeau film(comprise entre 0 et 10).
+
+        Retour:
+            Notedu film
+        """
+        return self.getRating()
+
+    @rating.setter
+    def rating(self: object, r: float) -> None:
+        """
+        Modifie la note du film.
+        La note doit être comprise entre 0 et 10
+
+        Paramètre:
+            r: nouvelle note du film (entre 0 et 10)
+        """
+        self.setRating(r)
+
+    def setRating(self: object,rating: float) -> None:
+        """
+        Modifie la note du film
+        Paramètre:
+            rating: nouvelle note du film
+        Exception:
+            ValueError: si la note n’est pas comprise entre 0 et 10
+        """
+        if not 0.0 <= rating <= 10.0:
+            raise ValueError(f"La note {rating} doit être comprise entre 0 et 10")
+        self._rating = rating
+
+    
+    rating = property(getRating, setRating)
+    title = property(getTitle)

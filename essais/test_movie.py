@@ -40,3 +40,30 @@ except ValueError as e:
     print(f"L’exception \"{e}\"a bien été lancée.")
 except:
     print("Ce n’est pas la bonne exception qui a été lancée !!?")
+
+
+m2: Movie = Movie('Les évadés', 122, 5.5)
+print(m2.getTitle() ,m2.getDuration(),m2.getRating())
+
+try:
+    m2.setRating(22.2)
+except ValueError as e:
+    print(f"L’exception \"{e}\"a bien été lancée.")
+except:
+    print("Ce n’est pas la bonne exception qui a été lancée !!?")
+
+try:
+    m2.setRating(-22.2)
+except ValueError as e:
+    print(f"L’exception \"{e}\"a bien été lancée.") 
+except:
+    print("Ce n’est pas la bonne exception qui a été lancée !!?")
+
+try:
+    m2.setRating(6.2)
+    print('Tout est OK.')
+except:
+    print('Les lignes précédentes n’auraient pas dû lancer d’exception !!')
+
+m3 = Movie('Les évadés', 122, 9.0)
+print(m3)
