@@ -19,8 +19,10 @@ class Rectangle(Shape):
         for i in range(self._height):
             print(self._pen * self._width)
     
-    def getPerimeter(self: object) -> int:
+    def getPerimeter(self: object) -> float:
         return (self._width + self._height) * 2
     
-    def getSurface(self: object) -> int:
+    def getSurface(self: object) -> float:
         return self._width * self._height
+    
+
