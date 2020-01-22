@@ -1,13 +1,5 @@
 <!--app/templates/index.html -->
-<!--Page affichant un mot de bienvenu avec lenom de l’utilisateur
-    Paramètres : 
-        user : dictionnaire possédant la clé 'username'
--->
-{% extends "base.html" %}
-<!--On définit le contenu du block -->
-{% block contenu %}
-    <!--Ici, on se concentre uniquement sur le contenu de la page -->
-    <h1>Bonjour {{ user['username'] }}</h1>
-    <p>Flask, c'est super !</p>
-    <hr/>
-{% endblock %}
+<!--Page affichant un mot de bienvenue avec le nom de l'utilisateurParamètres : user : dictionnaire contenant la clé 'username'posts : liste de dictionnaires contenant les messages postés-->{% extends "base.html" %}
+<!--On définit le contenu du block -->{% block contenu %}
+<!--Ici, on se concentre uniquement sur le contenu de la page -->
+<h1>Bonjour {{ user['username'] }}</h1>{% for post in posts %}

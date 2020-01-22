@@ -8,14 +8,21 @@
 <!doctype html>
 <html>
     <head>
-        <title>{{ title }} -Mon Application</title>
+        <title>
+            {% if title %}
+                {{ title }} -Mon Application
+            {% else %}
+                Bienvenue dans Mon Application
+            {% endif %}
+        </title>
     </head>
     <body>
         <nav>
             <div>Mon Application : <a href="/index">Accueil</a></div>
         </nav>
         <hr><!--Les pages s'afficheront ici -->
-        {% block contenu %}{% endblock %}
+        {% block contenu %}
+        {% endblock %}
         <!--fin d'affichage des pages -->
     </body>
 </html>
