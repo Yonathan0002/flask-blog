@@ -1,6 +1,6 @@
 __pycache__
 .vscode/
 .code/
-
+*~
 # Ignorer le répertoire de l’environnement virtuel
 env_flask/
