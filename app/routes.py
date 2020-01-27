@@ -13,7 +13,7 @@ def index():
             'body' : "coucou"
         },
         {
-            'author': {'usernamer':'fred'},
+            'author': {'username': 'suzan'},
             'body': "salut"
         }
     ]

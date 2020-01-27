@@ -1,5 +1,27 @@
 <!--app/templates/index.html -->
-<!--Page affichant un mot de bienvenue avec le nom de l'utilisateurParamètres : user : dictionnaire contenant la clé 'username'posts : liste de dictionnaires contenant les messages postés-->{% extends "base.html" %}
-<!--On définit le contenu du block -->{% block contenu %}
+<!--Page affichant un mot de bienvenue avec le nom de l'utilisateur
+    Paramètres : 
+        user : dictionnaire contenant la clé 'username'
+        posts : liste de dictionnaires contenant les messages postés
+-->
+{% extends "base.html" %}
+<!--On définit le contenu du block -->
+{% block contenu %}
 <!--Ici, on se concentre uniquement sur le contenu de la page -->
-<h1>Bonjour {{ user['username'] }}</h1>{% for post in posts %}
+    <h1>Bonjour {{ user['username'] }}</h1>
+    {% for post in posts %}
+    <div>
+        <p>
+            {{ post['author']['username'] }} a dit : 
+            <b>
+                {{ post['body']}}
+            </b>
+        </p>
+    </div>
+        {% else %}
+    <div>
+    <p>
+        Il n'y a pas encore de message posté.</p>
+    </div>
+{% endfor %}
+{% endblock %}
