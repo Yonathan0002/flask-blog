@@ -8,6 +8,7 @@
 <!doctype html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
         <title>
             {% if title %}
                 {{ title }} -Mon Application
@@ -17,9 +18,19 @@
         </title>
     </head>
     <body>
-        <nav>
-            <div>Mon Application : <a href="/index">Accueil</a></div>
-        </nav>
+        <header class="w3-blue">
+            <div >
+                
+                <h1><img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" /> Mon Application : </h1>
+            </div>
+
+        </header>
+
+        <div class="w3-bar w3-black">
+            <a href="/index" class="w3-bar-item w3-button">Accueil</a>
+            <a href="/apropos" class="w3-bar-item w3-button">À propos</a>
+        </div>
+        
         <hr><!--Les pages s'afficheront ici -->
         {% block contenu %}
         {% endblock %}

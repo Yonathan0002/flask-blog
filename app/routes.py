@@ -18,4 +18,8 @@ def index():
         }
     ]
 
-    return render_template('index.html', title='Accueil',user=user,posts=posts)
+    return render_template('index.html', title='yoyo',user=user,posts=posts)
+
+@app.route('/apropos')
+def apropos():
+    return render_template('apropos.html',title='yoyo')
