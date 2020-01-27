@@ -5,6 +5,7 @@ Click==7.0
 cycler==0.10.0
 decorator==4.2.1
 Flask==1.1.1
+Flask-WTF==0.14.2
 graphviz==0.8.2
 idna==2.6
 igraph==0.1.11
@@ -43,3 +44,4 @@ urllib3==1.22
 wcwidth==0.1.7
 Werkzeug==0.16.0
 wrapt==1.11.2
+WTForms==2.2.1
