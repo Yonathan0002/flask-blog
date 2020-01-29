@@ -20,8 +20,7 @@
     <body>
         <header class="w3-blue">
             <div >
-                
-                <h1><img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" /> Mon Application : </h1>
+                <h1 style="text-align: center;"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo" height="250" width="500"/></h1>
             </div>
 
         </header>
@@ -29,11 +28,23 @@
         <div class="w3-bar w3-black">
             <a href="/index" class="w3-bar-item w3-button">Accueil</a>
             <a href="/apropos" class="w3-bar-item w3-button">À propos</a>
+            <a href="/login" class="w3-bar-item w3-button">Se connecter</a>
         </div>
         
         <hr><!--Les pages s'afficheront ici -->
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+
         {% block contenu %}
         {% endblock %}
         <!--fin d'affichage des pages -->
+        
     </body>
 </html>
