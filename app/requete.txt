@@ -1,0 +1,37 @@
+>>> u = User(username='David', email='david@exemple.com')
+>>> u
+>>> db.session.add(u)                                                                            ^
+>>> p = Post(body='Mais symfony est trop lourd...',timestamp = datetime(2020,1,16), author=u)
+>>> db.session.add(p)
+>>> u = User.query.get(3)
+>>> p = Post(body='Mais c\'est plus simple à utiliser',timestamp = datetime(2020,1,16), author=u)
+>>> db.session.add(p)
+>>> u = User.query.get(1)
+>>> p = Post(body='C\'est mon premier post',timestamp = datetime(2020,1,1), author=u)
+>>> u
+>>> db.session.add(p)
+>>> p = Post(body='Flask est-il bien ?',timestamp = datetime(2020,1,12), author=u)
+>>> db.session.add(p)
+>>> p = Post(body='Flask possède beaucoup d\'extensions',timestamp = datetime(2020,1,20), author=u)
+>>> db.session.add(p)
+>>> u = User.query.get(2)
+>>> p = Post(body='C\'est mon premier post',timestamp = datetime(2020,1,4), author=u)
+>>> db.session.add(p)
+>>> u = User('Alice', 'alice@exemple.com')
+>>> u = User(username='Alice', email='alice@example.com')
+>>> p = Post(body='Symfony est comparable à Django',timestamp = datetime(2020,1,20), author=u)
+>>> db.session.add(u)
+>>> db.session.add(p)
+>>> p = Post(body='Symfony est comparable à Django',timestamp = datetime(2020,1,14), author=u)
+>>> db.session.add(p)
+>>> p = Post(body='Pas du tout',timestamp = datetime(2020,1,18), author=u)
+>>> db.session.add(p)
+>>> db.session.commit()
+posts = posts.query.all()
+
+for p in posts:
+    print("id=", p.id, ", body=", p.body, ", timestamp=", p.timestamp, ", user_id=", p.user_id)
+
+posts = Post.query.order_by(Post.timestamp).all()
+for p in posts:
+    print("id=", p.id, ", body=", p.body, ", timestamp=", p.timestamp, ", user_id=", p.user_id)
