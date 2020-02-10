@@ -1,3 +1,6 @@
+from app import db
+from app.models import User, Post
+
 >>> u = User(username='David', email='david@exemple.com')
 >>> u
 >>> db.session.add(u)                                                                            ^
@@ -34,4 +37,13 @@ for p in posts:
 
 posts = Post.query.order_by(Post.timestamp).all()
 for p in posts:
-    print("id=", p.id, ", body=", p.body, ", timestamp=", p.timestamp, ", user_id=", p.user_id)
+    print("id=", p.id,  "date :", p.timestamp, " <Post ",  p.body,">")
+
+posts = Post.query.filter(p.body.ilike("%symfony%"))
+for p in posts:
+    print("<Post ",  p.body,">")
+
+users = User.query.order_by(User.username).all()
+
+for u in users:
+    print("Nombre de messages de ",u.username," : ",u.posts.count())
