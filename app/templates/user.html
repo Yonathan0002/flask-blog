@@ -18,6 +18,12 @@
         Derni&egrave;re visite : {{ user.last_seen }}
     </p>
     {% endif %}
+
+    {% if user == current_user %}
+    <p>
+        <a href="{{ url_for('edit_profile') }}" class="w3-button w3-round w3-blue">Editer votre profil</a>
+    </p>
+    {% endif %}
 <hr/>
 
 <hr/>
