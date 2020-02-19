@@ -1,0 +1,631 @@
+2020-02-19 11:23:27,444 INFO : Démarrage de MonApplication [in /home/Etudiants/piat0005/s4/flask/app/__init__.py:44]
+2020-02-19 11:23:40,534 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:40,772 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:40,954 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:41,106 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:41,269 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:41,444 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:41,636 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:41,802 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:41,993 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:42,167 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:42,342 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:42,541 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:42,742 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:42,948 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:43,138 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:45,878 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:46,246 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
+2020-02-19 11:23:47,274 ERROR : Exception on /apropos [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 34, in apropos
+    return render_template('apropos.html',title='yoyo')
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/Etudiants/piat0005/s4/flask/app/templates/apropos.html", line 1, in top-level template code
+    {% extends "bae.html" %}
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 60, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/templating.py", line 89, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: bae.html
