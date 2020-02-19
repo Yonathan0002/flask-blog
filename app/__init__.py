@@ -22,3 +22,8 @@ login = LoginManager(app)
 login.login_view = 'login'
 from app import routes, models
 
+# On importe le fichier contenant
+# la définition des fonctions de vue
+# de l’application et des erreurs
+# ainsi que celui des modèles
+from app import routes, models, erreurs
