@@ -9,19 +9,19 @@
 {% block contenu %}
 <!--Ici, on se concentre uniquement sur le contenu de la page -->
     <h1>Bonjour {{ current_user.username }}</h1>
-    {% for post in current_user.posts %}
+    <!--Insérez ici le formulaire -->
+    {% for post in posts%}
     <div>
         <p>
-            {{ post.author.username  }} a dit : 
-            <b>
-                {{ post.body }}
-            </b>
+            {% include "_post.html" %}
         </p>
     </div>
-        {% else %}
+    {% else %}
     <div>
-    <p>
-        Il n'y a pas encore de message posté.</p>
+        <p>
+            Il n'y a pas encore de message posté.
+
+        </p>
     </div>
     {% endfor %}
-    {% endblock %}
+{% endblock %}
