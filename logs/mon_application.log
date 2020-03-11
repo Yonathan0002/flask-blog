@@ -697,3 +697,48 @@ Traceback (most recent call last):
   File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/jinja2/parser.py", line 59, in fail
     raise exc(msg, lineno, self.name, self.filename)
 jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'elif'. Jinja was looking for the following tags: 'endblock'. The innermost block that needs to be closed is 'block'.
+2020-03-11 10:27:50,370 INFO : Démarrage de MonApplication [in /home/Etudiants/piat0005/s4/flask/app/__init__.py:44]
+2020-03-11 10:28:20,123 INFO : Démarrage de MonApplication [in /home/Etudiants/piat0005/s4/flask/app/__init__.py:44]
+2020-03-11 10:47:08,452 INFO : Démarrage de MonApplication [in /home/Etudiants/piat0005/s4/flask/app/__init__.py:44]
+2020-03-11 10:49:21,215 ERROR : Exception on /index [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 26, in index
+    posts = current_user.post_abonnes().all()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'User' object has no attribute 'post_abonnes'
+2020-03-11 10:49:29,626 ERROR : Exception on /index [GET] [in /home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/home/Etudiants/piat0005/s4/flask/app/routes.py", line 26, in index
+    posts = current_user.post_abonnes().all()
+  File "/home/Etudiants/piat0005/s4/flask/env_flask/lib/python3.6/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'User' object has no attribute 'post_abonnes'
